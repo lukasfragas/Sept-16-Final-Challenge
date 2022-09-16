@@ -1,0 +1,147 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(54, 46, 46);
+    color: azure;
+
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width:70%;
+    max-width: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+
+}
+
+h4 {
+    font-weight: 1000;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+body {
+    display: grid;
+    border: 5px white solid;;
+}
+
+.welcome-cards {
+    // background-color: aliceblue;
+    margin-bottom: 40px;
+    gap: 30px;
+
+    @media (min-width:600px) { 
+        display: grid;
+        // grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width:1280px) { 
+        display: grid;
+        // grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .welcome {
+        padding: 24px;
+    }
+}
+
+.challenge-cards {
+    // background-color: aliceblue;
+    display: grid;
+    gap: 30px;
+    margin-bottom: 40px;
+
+    @media (min-width:600px) { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;;
+    }
+
+    @media (min-width:1280px) { 
+        display: grid;
+        // grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .challenge1 > img {
+        background-color: rgb(54, 189, 230);
+    }
+
+    .challenge1, .challenge2, .challenge3 {
+        padding: 24px;
+    }
+
+    .challenge2 > img {
+        background-color: aquamarine;
+    }
+
+    .challenge3 > img {
+        background-color: rgb(241, 133, 212);
+    }
+}
+
+
+.social-cards {
+    display: grid;
+
+    @media (min-width:960px) { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // gap: 30px;
+    }
+
+   .social-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 5fr;
+    // border: 1px white solid;
+    
+
+
+    .social-image > img {
+        // border: 1px white solid;
+        display: grid;
+        // align-items: center;
+    }
+
+    .social-text {
+        padding: 20px;
+    }
+} 
+}
+
+
+
+.footer-container {
+    display: grid;
+    padding: 20px;
+    // border: 1px white solid;
+
+    @media (min-width:960px) { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .footer {
+        padding-bottom: 20px;
+    }
+    .footer-info-links {
+        display: grid;
+        // border: 1px white solid;
+        padding-bottom: 20px;
+    }
+
+    .footer-navigation-links {
+        display: grid;
+        // border: 1px white solid;
+        padding-bottom: 20px;
+    }
+
+}

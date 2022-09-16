@@ -1,0 +1,123 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(54, 46, 46);
+  color: azure;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 70%;
+  max-width: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-weight: 1000;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+body {
+  display: grid;
+  border: 5px white solid;
+}
+
+.welcome-cards {
+  margin-bottom: 40px;
+  gap: 30px;
+}
+@media (min-width: 600px) {
+  .welcome-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1280px) {
+  .welcome-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.welcome-cards .welcome {
+  padding: 24px;
+}
+
+.challenge-cards {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+@media (min-width: 600px) {
+  .challenge-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1280px) {
+  .challenge-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.challenge-cards .challenge1 > img {
+  background-color: rgb(54, 189, 230);
+}
+.challenge-cards .challenge1, .challenge-cards .challenge2, .challenge-cards .challenge3 {
+  padding: 24px;
+}
+.challenge-cards .challenge2 > img {
+  background-color: aquamarine;
+}
+.challenge-cards .challenge3 > img {
+  background-color: rgb(241, 133, 212);
+}
+
+.social-cards {
+  display: grid;
+}
+@media (min-width: 960px) {
+  .social-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.social-cards .social-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 5fr;
+}
+.social-cards .social-container .social-image > img {
+  display: grid;
+}
+.social-cards .social-container .social-text {
+  padding: 20px;
+}
+
+.footer-container {
+  display: grid;
+  padding: 20px;
+}
+@media (min-width: 960px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+.footer-container .footer {
+  padding-bottom: 20px;
+}
+.footer-container .footer-info-links {
+  display: grid;
+  padding-bottom: 20px;
+}
+.footer-container .footer-navigation-links {
+  display: grid;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */
