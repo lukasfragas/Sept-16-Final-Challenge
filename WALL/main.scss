@@ -1,0 +1,54 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px black solid;
+    margin: 1px;
+    padding: 1px;
+    gap: 1px;
+}
+
+h1 { 
+    text-align: center;
+}
+
+.page-body { 
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+    .empty-tile {
+        display: grid;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        text-align: center;
+        margin: auto;
+        border: 0px black solid;
+        // text-align: justify;
+    }
+
+    .chess-vertical {
+        display: grid;
+        grid-auto-flow: row;
+    
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 8;
+    
+        text-align: center;
+        
+    }
+    
+    .chess-horizontal {
+        display: grid;
+        grid-auto-flow: column;
+    
+        grid-column: 2 / span 8;
+        grid-row: 1 / span 1;
+    
+        text-align: center;
+    }
+    
+}
+
+table {
+    height: 10em;
+    width: 10em;
+}
