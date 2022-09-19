@@ -15,6 +15,15 @@ h1 {
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 1fr);
 }
+.page-body .chess-table {
+  grid-template-columns: repeat(8, 1fr);
+  display: grid;
+  grid-row: 2/-1;
+  grid-column: 2/-1;
+}
+.page-body .table-tiles:nth-child(2n) {
+  background-color: tomato;
+}
 .page-body .empty-tile {
   display: grid;
   grid-column: 1/span 1;
@@ -41,4 +50,21 @@ h1 {
 table {
   height: 10em;
   width: 10em;
+}
+
+.separate-container {
+  display: grid;
+  grid-template-columns: auto-fill;
+  grid-template-columns: auto-fit;
+}
+.separate-container .separate-cards {
+  min-height: 5em;
+  min-width: 5em;
+  gap: 20px;
+}
+
+.container-game {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: autofill;
 }/*# sourceMappingURL=main.css.map */

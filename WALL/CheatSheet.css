@@ -1,0 +1,106 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.first-container {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  gap: 1px;
+  padding: 5px;
+  font-size: 2em;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 25% 25% 50%;
+  border: 10px solid rgb(0, 0, 0);
+  outline: 10px dashed blue;
+  box-shadow: 10px 10px 10px 10px #0bc452;
+  margin: 10px;
+}
+
+.second-container {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  gap: 1px;
+  padding: 5px;
+  font-size: 2em;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+
+.Third-container {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  gap: 1px;
+  padding: 5px;
+  font-size: 2em;
+  grid-template-columns: auto 25% 40px 1fr;
+  grid-template-rows: auto auto 1fr;
+}
+
+.Forth-container {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  gap: 1px;
+  padding: 5px;
+  font-size: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+}
+
+.Fifth-container {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  gap: 1px;
+  padding: 5px;
+  font-size: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+}
+
+.Sixth-container {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  gap: 1px;
+  padding: 5px;
+  font-size: 2em;
+  grid-template-columns: 15px repeat(2, 1fr auto) 30px repeat(2, 2fr);
+}
+
+.boxmodel1 {
+  box-sizing: content-box;
+  width: 100px;
+  padding: 10px;
+  border: 10px solid black;
+  margin: 10px;
+}
+
+.boxmodel2 {
+  box-sizing: border-box;
+  width: 100px;
+  padding: 10px;
+  border: 10px solid black;
+  margin: 10px;
+}
+
+.align-self-container {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  gap: 1px;
+  padding: 5px;
+  font-size: 2em;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.align-self-container firs-item {
+  background-color: darkorange;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  JUSTIFY-self: center;
+}/*# sourceMappingURL=CheatSheet.css.map */
